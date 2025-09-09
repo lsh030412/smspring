@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.sm.app.repository.PlaceRepository">
+
+    <insert id="insert" parameterType="edu.sm.app.dto.Place">
+        INSERT INTO place(name, type, addr, lat, lng, img)
+        VALUES(#{name}, #{type}, #{addr}, #{lat}, #{lng}, #{img})
+    </insert>
+
+    <update id="update" parameterType="edu.sm.app.dto.Place">
+        UPDATE place
+        SET name=#{name}, type=#{type}, addr=#{addr}, lat=#{lat}, lng=#{lng}, img=#{img}
+        WHERE id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM place WHERE id=#{id}
+    </delete>
+
+    <select id="selectAll" resultType="edu.sm.app.dto.Place">
+        SELECT * FROM place
+    </select>
+
+    <select id="select" parameterType="int" resultType="edu.sm.app.dto.Place">
+        SELECT * FROM place WHERE id=#{id}
+    </select>
+
+    <!-- 주소 + 타입으로 조회 -->
+    <select id="findByAddrAndType" parameterType="edu.sm.app.dto.Search" resultType="edu.sm.app.dto.Place">
+        SELECT *
+        FROM place
+        WHERE addr LIKE CONCAT('%', #{addr}, '%')
+          AND type = #{type}
+    </select>
+
+</mapper>

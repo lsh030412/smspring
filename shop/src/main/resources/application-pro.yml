@@ -1,0 +1,38 @@
+#springBoot 내장 서버 환경설정
+#bootwar 실행시에만 적용이 됨
+#일반 war tomcat 실행시에는 적용이 x
+server:
+  port: 8443 #프로토콜 접속할때 통상적으로 8443으로 들어간다
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12   #이게 인증서다라는 표시
+    key-store-password: ENC(Y6NgbbcggJp06p9ZnpSSAQ==)
+    key-store-type: PKCS12  # 인증서 형식 (최근에는 더 복잡한 구조로도 나옴 : 암호화 알고림즘)
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=Asia/Seoul
+    username: smuser
+    password: ENC(Y6NgbbcggJp06p9ZnpSSAQ==)
+
+mybatis:
+  type-aliases-package: edu.sm.app.dto
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    root: error
+
+# Application config
+# 이건 내가 만드는거
+app:
+  key:
+    skey: ${MY_KEY}
