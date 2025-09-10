@@ -14,7 +14,7 @@
         let c = confirm("수정 하시겠습니까 ?");
         if(c == true){
           $('#product_update_form').attr("method", "post");
-          $('#product_update_form').attr("action", "/product/updateimpl");
+          $('#product_update_form').attr("action", "<c:url value="/product/updateimpl"/>");
           $('#product_update_form').attr("enctype", "multipart/form-data");
           $('#product_update_form').submit();
         }
@@ -22,7 +22,7 @@
       $('#delete_btn').click(()=>{
         let c = confirm('삭제 하시겠습니까 ?');
         if(c == true){
-          location.href='/product/delete?id=${p.productId}';
+          location.href='<c:url value="/product/delete?id=${p.productId}"/>';
         }
       });
     }

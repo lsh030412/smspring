@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4985523b-258e-49f7-a70a-99460badcace" name="Changes" comment="0901" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/admin">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/demo">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/iot">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/map1">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/map3">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/map6">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/map7">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/shop">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/shop">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/map1">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/map7">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shop" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shop" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shop" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shop" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lsh030412&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lsh030412/smspring.git&quot;,
+    &quot;accountId&quot;: &quot;04c35870-ce44-4c28-b6a0-33d5a95d6881&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="324oUHR9YywSMPRC9bYsHBKLqbx" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build admin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build map7.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build shop.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InsertTest.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InsertTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MarkerSelectTest.selectByLoc.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SearchTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SecurityTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SecurityTest2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectTest.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectTest.contextloads.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.iot [:edu.sm.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.map1 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.map7 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shop [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shop [bootTestRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shop [bootWar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shop [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shop [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shop [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shop [test].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shop [war].executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/smspring/smspring/shop/src/main/webapp/views&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/smspring/smspring/map/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\smspring\smspring\shop\src\main\webapp\views" />
+      <recent name="C:\smspring\smspring\shop\src\main\webapp\views\cust" />
+      <recent name="C:\smspring\smspring\shop\src\main\resources" />
+      <recent name="C:\smspring\smspring\shop" />
+      <recent name="C:\smspring\smspring\map7\src\main\webapp\views\map" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\smspring\smspring" />
+      <recent name="C:\smspring\smspring\map7\src\main\webapp\views" />
+      <recent name="C:\smspring\smspring\shop\src\main\resources\static\img" />
+      <recent name="C:\smspring\smspring\readme\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.sm.cust" />
+      <recent name="edu.sm.security" />
+      <recent name="edu.sm.controller" />
+      <recent name="edu.sm.app.service" />
+      <recent name="edu.sm.app.repository" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.shop [bootRun]">
+    <configuration name="InsertTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.sm.cust.InsertTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="InsertTest.contextLoads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.sm.cust.InsertTest.contextLoads&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SecurityTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.sm.security.SecurityTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SecurityTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.sm.security.SecurityTest2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SelectTest.contextLoads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.sm.cust.SelectTest.contextLoads&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="shop [bootRun]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="admin.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.sm.AdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Map1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="map1.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.sm.Map1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Map3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="map3.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.sm.map3.Map3Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Map6Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="map6.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.sm.Map6Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Map7Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="map7.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.sm.Map7Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="shop.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.sm.ShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.shop [bootRun]" />
+      <item itemvalue="Gradle.InsertTest" />
+      <item itemvalue="Gradle.InsertTest.contextLoads" />
+      <item itemvalue="Gradle.SecurityTest" />
+      <item itemvalue="Gradle.SecurityTest2" />
+      <item itemvalue="Gradle.SelectTest.contextLoads" />
+      <item itemvalue="Spring Boot.AdminApplication" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.Map1Application" />
+      <item itemvalue="Spring Boot.Map3Application" />
+      <item itemvalue="Spring Boot.Map6Application" />
+      <item itemvalue="Spring Boot.Map7Application" />
+      <item itemvalue="Spring Boot.ShopApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.InsertTest.contextLoads" />
+        <item itemvalue="Gradle.SelectTest.contextLoads" />
+        <item itemvalue="Gradle.InsertTest" />
+        <item itemvalue="Gradle.SecurityTest2" />
+        <item itemvalue="Gradle.SecurityTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4985523b-258e-49f7-a70a-99460badcace" name="Changes" comment="" />
+      <created>1756689222484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756689222484</updated>
+      <workItem from="1756689223636" duration="20782000" />
+      <workItem from="1756775518994" duration="24678000" />
+      <workItem from="1756861301775" duration="25224000" />
+      <workItem from="1756946843938" duration="16675000" />
+      <workItem from="1756969020213" duration="13750000" />
+      <workItem from="1757034044546" duration="22728000" />
+      <workItem from="1757292290946" duration="13169000" />
+      <workItem from="1757310272789" duration="12256000" />
+      <workItem from="1757375830035" duration="10621000" />
+    </task>
+    <task id="LOCAL-00001" summary="0901">
+      <option name="closed" value="true" />
+      <created>1756689975117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756689975117</updated>
+    </task>
+    <task id="LOCAL-00002" summary="0901">
+      <option name="closed" value="true" />
+      <created>1756690416328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756690416328</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0901" />
+    <option name="LAST_COMMIT_MESSAGE" value="0901" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/map/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

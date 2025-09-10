@@ -33,7 +33,7 @@ public class ProductService implements SmService<Product, Integer> {
 
     @Override
     public void modify(Product product) throws Exception {
-        // 기존 이미지 사용
+        // 새로운 이미지가 있는지 검사
         if(product.getProductImgFile().isEmpty()){
             productRepository.update(product);
         }
@@ -49,6 +49,8 @@ public class ProductService implements SmService<Product, Integer> {
 
     @Override
     public void remove(Integer s) throws Exception {
+        Product product = this.get(s);
+        FileUploadUtil.deleteFile(product.getProductImg(), imgDir);
         productRepository.delete(s);
     }
 

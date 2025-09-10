@@ -55,7 +55,7 @@ public class ProductController {
         return "redirect:/product/get";
     }
     @RequestMapping("/updateimpl")
-    public String updateimpl(Model model, Product product) throws Exception {
+    public String updateimpl(Product product) throws Exception {
         productService.modify(product);
         return "redirect:/product/detail?id="+product.getProductId();
     }
