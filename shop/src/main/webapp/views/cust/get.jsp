@@ -29,6 +29,7 @@
           <fmt:formatDate pattern="yyyy년MM월dd일 HH:mm" value="${ parsedDateTime }" />
         </td>
       </tr>
+    </c:forEach>
     </tbody>
   </table>
 </div>

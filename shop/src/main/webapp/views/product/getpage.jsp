@@ -8,7 +8,7 @@
 </style>
 <%-- Center Page --%>
 <div class="col-sm-9">
-  <h2>Product Get Page</h2>
+  <h2>Product GetPage Page</h2>
   <table id="product_table" class="table table-bordered">
     <thead>
     <tr>
@@ -23,14 +23,14 @@
     </thead>
     <tbody>
     <c:choose>
-      <c:when test="${plist == null}">
+      <c:when test="${clist == null}">
         <h5>데이터가 없습니다.</h5>
       </c:when>
       <c:otherwise>
-        <c:forEach var="p" items="${plist.list}">
+        <c:forEach var="p" items="${clist.list}">
           <tr>
             <td><img src="/imgs/${p.productImg}"></td>
-            <td><a href="/product/detail?id=${p.productId}">${p.productId}</a></td>
+            <td><a href="<c:url value="/product/detail?id=${p.productId}"/>">${p.productId}</a></td>
             <td>${p.productName}</td>
             <td><fmt:formatNumber type="number" pattern="###,###원" value="${p.productPrice}" /></td>
             <td>${p.discountRate}</td>
@@ -44,9 +44,7 @@
         </c:forEach>
       </c:otherwise>
     </c:choose>
-
-
     </tbody>
   </table>
-  <jsp:include page="/views/product/page.jsp" />
+  <jsp:include page="../page.jsp"/>
 </div>

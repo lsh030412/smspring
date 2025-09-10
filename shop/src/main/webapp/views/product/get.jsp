@@ -29,8 +29,8 @@
       <c:otherwise>
         <c:forEach var="p" items="${plist}">
           <tr>
-            <td><img src="/imgs/${p.productImg}"></td>
-            <td><a href="/product/detail?id=${p.productId}">${p.productId}</a></td>
+            <td><img src="<c:url value="/imgs/${p.productImg}"/>"></td>
+            <td><a href="<c:url value="/product/detail?id=${p.productId}"/>">${p.productId}</a></td>
             <td>${p.productName}</td>
             <td><fmt:formatNumber type="number" pattern="###,###원" value="${p.productPrice}" /></td>
             <td>${p.discountRate}</td>
@@ -48,5 +48,4 @@
 
     </tbody>
   </table>
-  <jsp:include page="../page.jsp"/>
 </div>

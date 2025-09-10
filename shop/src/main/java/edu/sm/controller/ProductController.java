@@ -38,7 +38,7 @@ public class ProductController {
     @RequestMapping("/delete")
     public String delete(Model model, @RequestParam("id") int id) throws Exception {
         productService.remove(id);
-        return "/product/get";
+        return "redirect:/product/get";
     }
     @RequestMapping("/detail")
     public String detail(Model model, @RequestParam("id") int id) throws Exception {
@@ -73,7 +73,7 @@ public class ProductController {
         PageInfo<Product> list = null;
         list = new PageInfo<>(productService.getPage(pageNo), 3); // 5:하단 네비게이션 개수
         model.addAttribute("target", "/product");
-        model.addAttribute("plist", list);
+        model.addAttribute("clist", list);
         model.addAttribute("left",dir+"left");
         model.addAttribute("center",dir+"getpage");
         return "index";
