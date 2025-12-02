@@ -1,5 +1,5 @@
 server:
-  port: 8443 #프로토콜 접속할때 통상적으로 8443으로 들어간다
+  port: 8445 #프로토콜 접속할때 통상적으로 8443으로 들어간다
   ssl:
     enabled: true
     key-store: classpath:keystore.p12   #이게 인증서다라는 표시
@@ -10,6 +10,11 @@ server:
       charset: UTF-8
       force: true
 spring:
+  messages:
+    basename: message
+    encoding: utf-8
+    cache-duration: 10
+    fallback-to-system-locale: false
   config:
     import: optional:file:.env[.properties] #.env import
   mvc:
@@ -17,10 +22,14 @@ spring:
       prefix: /views/
       suffix: .jsp
   datasource:
-    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/shopdb?characterEncoding=utf8
-#    url: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=Asia/Seoul
-    username: smuser
+#    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/shopdb?characterEncoding=utf8
+##    url: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=Asia/Seoul
+#    username: smuser
+#    password: ENC(Y6NgbbcggJp06p9ZnpSSAQ==)
+#    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
     password: ENC(Y6NgbbcggJp06p9ZnpSSAQ==)
 mybatis:
   type-aliases-package: edu.sm.app.dto
@@ -34,9 +43,15 @@ logging:
 # Application config
 # 이건 내가 만드는거
 app:
+  url:
+    websocketurl: https://10.20.34.85:8443/
   dir:
     imgsdir: file:///C:/smspring/imgs/     # 화면 출력 용
     uploadimgsdir: C:/smspring/imgs/    # 파일 Write 용
+    logsdir: file:///C:/smspring/logs/     # 로그 출력 용
+    logsdirRead: C:/smspring/logs/ # Read용
   key:
     skey: ${MY_KEY}
     algo: PBEWithMD5AndDES
+    wkey: ENC(34dLUJrGGnsDntd5cJlWzClgQg9sE4CzeMZNzIKOkR+NYVGuc3xeEBJvAqqI2ge0S5wlqnSXZ7xEu8xhJYpC+XRqENbH7xTKznIFOLpWsDo=)
+    owkey: ENC(PizbdAKnytpOVEjldzf4NRRapWa1ofzFIVESDA0bAejHF9UvCp/kH5g8hw/MCEKx)
