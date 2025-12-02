@@ -5,7 +5,7 @@
 <mapper namespace="edu.sm.app.repository.AnythingRepository">
 
     <select id="findByAddress" parameterType="String" resultType="Anything">
-        SELECT * FROM Places WHERE address like CONCAT('%', #{addr}, '%')
+        SELECT * FROM anything WHERE address like CONCAT('%', #{addr}, '%')
     </select>
 
     <select id="findShopsWithinRadius" resultType="Anything">
@@ -19,19 +19,40 @@
     </select>
 
     <select id="selectAll" resultType="Anything">
-        SELECT * FROM marker
+        SELECT * FROM anything
     </select>
 
+    <insert id="insertSeveral" parameterType="list">
+        INSERT INTO anything (address, addr_name, img, lat, lng, loc)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.address}, #{item.addrName}, #{item.img}, #{item.lat}, #{item.lng}, #{item.loc})
+        </foreach>
+    </insert>
+
     <insert id="insert" parameterType="Anything">
-        INSERT INTO marker VALUES (#{target},#{title},#{img},#{lat},#{lng},#{loc})
+        INSERT INTO anything VALUES (#{item.address}, #{item.addrName}, #{item.img}, #{item.lat}, #{item.lng}, #{item.loc})
     </insert>
 
     <update id="update" parameterType="Anything">
-        UPDATE marker SET title=#{title}, img=#{img}, lat=#{lat}, lng=#{lng}, loc=#{loc} WHERE target=#{target}
+        UPDATE anything SET title=#{title}, img=#{img}, lat=#{lat}, lng=#{lng}, loc=#{loc} WHERE target=#{target}
+    </update>
+
+    <update id="updateSet" parameterType="Anything">
+        UPDATE anything
+        <set>
+            <if test="address != null">address=#{address},</if>
+            <if test="addrName != null">addr_name=#{addrName},</if>
+            <if test="img != null">img=#{img},</if>
+            <if test="lat != null">lat=#{lat},</if>
+            <if test="lng != null">lng=#{lng},</if>
+            <if test="loc != null">loc=#{loc}</if>
+        </set>
+        WHERE loc_id=#{locId}
     </update>
 
     <delete id="delete" parameterType="Integer">
-        DELETE FROM cust WHERE target=#{target}
+        DELETE FROM cust WHERE loc_id=#{locId}
     </delete>
 
 </mapper>

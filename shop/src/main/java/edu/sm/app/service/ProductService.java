@@ -3,7 +3,10 @@ package edu.sm.app.service;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import edu.sm.app.dto.Cust;
+import edu.sm.app.dto.CustSearch;
 import edu.sm.app.dto.Product;
+import edu.sm.app.dto.ProductSearch;
 import edu.sm.app.repository.ProductRepository;
 import edu.sm.common.frame.SmService;
 import edu.sm.util.FileUploadUtil;
@@ -67,5 +70,13 @@ public class ProductService implements SmService<Product, Integer> {
     public Page<Product> getPage(int pageNo) throws Exception {
         PageHelper.startPage(pageNo, 3);
         return productRepository.getpage();
+    }
+    public Page<Product> getPageSearch(int pageNo, ProductSearch productSearch) throws Exception {
+        PageHelper.startPage(pageNo, 3);
+        return productRepository.getpageSearch(productSearch);
+    }
+
+    public List<Product> searchProductList(ProductSearch productSearch) throws Exception {
+        return productRepository.searchProductList(productSearch);
     }
 }

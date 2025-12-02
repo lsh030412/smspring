@@ -10,7 +10,7 @@ import lombok.*;
 public class Anything {
     int locId;
     String address;
-    String AddrName;
+    String addrName;
     String img;
     double lat;
     double lng;

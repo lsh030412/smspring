@@ -2,6 +2,7 @@ package edu.sm.controller;
 
 import com.github.pagehelper.PageInfo;
 import edu.sm.app.dto.Cust;
+import edu.sm.app.dto.CustSearch;
 import edu.sm.app.service.CustService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -48,17 +49,49 @@ public class CustController {
         model.addAttribute("left",dir+"left");
         return "index";
     }
-    @RequestMapping("/getpage")
-    public String getpage(@RequestParam(value="pageNo", defaultValue = "1") int pageNo, Model model) throws Exception {
+    @RequestMapping("/search")
+    public String search(Model model, CustSearch custSearch)throws Exception {
+        List<Cust> list = null;
+        list = custService.searchCustList(custSearch);
+
+        model.addAttribute("custName", custSearch.getCustName());
+        model.addAttribute("startDate", custSearch.getStartDate());
+        model.addAttribute("endDate", custSearch.getEndDate());
+//      이렇게 객체를 넣어서 통째로 보내줄 수 있음
+        model.addAttribute("searchcust",custSearch);
+
+        model.addAttribute("clist", list);
+        model.addAttribute("center",dir+"get");
+        model.addAttribute("left",dir+"left");
+        return "index";
+    }
+//    @RequestMapping("/getpage")
+//    public String getpage(@RequestParam(value="pageNo", defaultValue = "1") int pageNo, Model model
+//                           ) throws Exception {
+//        PageInfo<Cust> p = null;
+//        p = new PageInfo<>(custService.getPage(pageNo), 5); // 5:하단 네비게이션 개수
+//        model.addAttribute("target", "/cust");
+//        model.addAttribute("clist", p);
+//        model.addAttribute("left",dir+"left");
+//        model.addAttribute("center",dir+"getpage");
+//        return "index";
+//    }
+    @RequestMapping("/searchpage")
+    public String searchpage(@RequestParam(value="pageNo", defaultValue = "1") int pageNo, Model model,
+                          CustSearch custSearch) throws Exception {
         PageInfo<Cust> p = null;
-        p = new PageInfo<>(custService.getPage(pageNo), 5); // 5:하단 네비게이션 개수
+        p = new PageInfo<>(custService.getPageSearch(pageNo, custSearch), 3); // 5:하단 네비게이션 개수
+
+        model.addAttribute("custName", custSearch.getCustName());
+        model.addAttribute("startDate", custSearch.getStartDate());
+        model.addAttribute("endDate", custSearch.getEndDate());
+
         model.addAttribute("target", "/cust");
-        model.addAttribute("clist", p);
+        model.addAttribute("cpage", p);
         model.addAttribute("left",dir+"left");
         model.addAttribute("center",dir+"getpage");
         return "index";
     }
-
     @RequestMapping("/delete")
     public String delete(Model model, @RequestParam("id") String id) throws Exception {
         custService.remove(id);

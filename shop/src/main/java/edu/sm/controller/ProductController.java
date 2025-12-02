@@ -3,7 +3,9 @@ package edu.sm.controller;
 
 import com.github.pagehelper.PageInfo;
 import edu.sm.app.dto.Cust;
+import edu.sm.app.dto.CustSearch;
 import edu.sm.app.dto.Product;
+import edu.sm.app.dto.ProductSearch;
 import edu.sm.app.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -33,6 +35,24 @@ public class ProductController {
     public String add(Model model) {
         model.addAttribute("left", dir+"left");
         model.addAttribute("center", dir+"add");
+        return "index";
+    }
+
+    @RequestMapping("/search")
+    public String search(Model model, ProductSearch productSearch)throws Exception {
+        List<Product> list = null;
+        list = productService.searchProductList(productSearch);
+
+        model.addAttribute("productName", productSearch.getProductName());
+        model.addAttribute("minPrice", productSearch.getMinPrice());
+        model.addAttribute("maxPrice", productSearch.getMaxPrice());
+        model.addAttribute("cateId", productSearch.getCateId());
+//      이렇게 객체를 넣어서 통째로 보내줄 수 있음
+        model.addAttribute("searchproduct",productSearch);
+
+        model.addAttribute("plist", list);
+        model.addAttribute("center",dir+"get");
+        model.addAttribute("left",dir+"left");
         return "index";
     }
     @RequestMapping("/delete")
@@ -68,12 +88,28 @@ public class ProductController {
         model.addAttribute("center", dir+"get");
         return "index";
     }
-    @RequestMapping("/getpage")
-    public String getpage(@RequestParam(value="pageNo", defaultValue = "1") int pageNo, Model model) throws Exception {
+//    @RequestMapping("/getpage")
+//    public String getpage(@RequestParam(value="pageNo", defaultValue = "1") int pageNo, Model model) throws Exception {
+//        PageInfo<Product> list = null;
+//        list = new PageInfo<>(productService.getPage(pageNo), 3); // 5:하단 네비게이션 개수
+//        model.addAttribute("target", "/product");
+//        model.addAttribute("clist", list);
+//        model.addAttribute("left",dir+"left");
+//        model.addAttribute("center",dir+"getpage");
+//        return "index";
+//    }
+    @RequestMapping("/searchpage")
+    public String searchpage(@RequestParam(value="pageNo", defaultValue = "1") int pageNo, Model model,
+                             ProductSearch productSearch) throws Exception {
         PageInfo<Product> list = null;
-        list = new PageInfo<>(productService.getPage(pageNo), 3); // 5:하단 네비게이션 개수
+        list = new PageInfo<>(productService.getPageSearch(pageNo, productSearch), 3); // 5:하단 네비게이션 개수
+        model.addAttribute("productName", productSearch.getProductName());
+        model.addAttribute("minPrice", productSearch.getMinPrice());
+        model.addAttribute("maxPrice", productSearch.getMaxPrice());
+        model.addAttribute("cateId", productSearch.getCateId());
+
         model.addAttribute("target", "/product");
-        model.addAttribute("clist", list);
+        model.addAttribute("cpage", list);
         model.addAttribute("left",dir+"left");
         model.addAttribute("center",dir+"getpage");
         return "index";

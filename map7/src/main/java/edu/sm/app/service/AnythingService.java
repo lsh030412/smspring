@@ -25,10 +25,13 @@ public class AnythingService implements SmService <Anything, Integer>{
     public void register(Anything anything) throws Exception {
 
     }
+    public void insertSeveral(List<Anything> list) throws Exception {
+        anythingRepository.insertSeveral(list);
+    }
 
     @Override
     public void modify(Anything anything) throws Exception {
-
+        anythingRepository.update(anything);
     }
 
     @Override
@@ -44,5 +47,9 @@ public class AnythingService implements SmService <Anything, Integer>{
     @Override
     public Anything get(Integer locId) throws Exception {
         return anythingRepository.select(locId);
+    }
+
+    public void updateSet(Anything anything) throws Exception {
+        anythingRepository.updateSet(anything);
     }
 }

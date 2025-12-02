@@ -9,6 +9,43 @@
 <%-- Center Page --%>
 <div class="col-sm-9">
   <h2>Product Get Page</h2>
+
+  <form action="<c:url value="/product/search"/>" method="get"
+        style="margin-bottom:30px;" id="search_form" class="form-inline well">
+    <div class="form-group">
+      <label for="id">Name:</label>
+      <input type="text" name="productName" class="form-control" id="id"
+      <c:if test="${productName != null}">
+             value="${productName}"
+      </c:if>>
+    </div>
+    <div class="form-group">
+      <label for="minmoney">Money Min:</label>
+      <input type="number" name="minPrice" class="form-control" id="minmoney"
+      <c:if test="${minPrice != null}">
+             value="${minPrice}"
+      </c:if>>
+    </div>
+    <div class="form-group">
+      <label for="maxmoney">Money Max:</label>
+      <input type="number" name="maxPrice" class="form-control" id="maxmoney"
+      <c:if test="${maxPrice != null}">
+             value="${maxPrice}"
+      </c:if>>
+    </div>
+    <div class="form-group">
+      <label for="cateId">Cate:</label>
+      <select name="cateId" id="cateId" class="form-control">
+        <option value="" <c:if test="${cateId == null}">selected</c:if>>전체</option>
+        <option value="10" <c:if test="${cateId == 10}">selected</c:if>>하의</option>
+        <option value="20" <c:if test="${cateId == 20}">selected</c:if>>상의</option>
+        <option value="30" <c:if test="${cateId == 30}">selected</c:if>>신발</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-info">Search</input>
+    </div>
+  </form>
   <table id="product_table" class="table table-bordered">
     <thead>
     <tr>

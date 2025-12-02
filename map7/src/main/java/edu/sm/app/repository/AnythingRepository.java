@@ -14,4 +14,6 @@ public interface AnythingRepository extends SmRepository<Anything, Integer>{
     List<Anything> findShopsWithinRadius(@RequestParam("lat") double lat,
                                          @RequestParam("lng") double lng,
                                          @RequestParam("radius") double radius) throws Exception;
+    void insertSeveral(List<Anything> list) throws Exception;
+    void updateSet(Anything anything) throws Exception;
 }
