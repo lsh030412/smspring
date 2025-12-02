@@ -22,8 +22,13 @@
       <input type="file" class="form-control" placeholder="Select image" id="pimg" name="productImgFile">
     </div>
     <div class="form-group">
-      <label for="cate">Cate Id:</label>
-      <input type="number" class="form-control" placeholder="Enter cate id" id="cate" name="cateId">
+      <label for="cateId">Cate:</label>
+      <select name="cateId" id="cateId" class="form-control">
+        <option value=" " selected>전체</option>
+        <option value="10">하의</option>
+        <option value="20">상의</option>
+        <option value="30">신발</option>
+      </select>
     </div>
     <button type="submit" class="btn btn-primary">Register</button>
   </form>
